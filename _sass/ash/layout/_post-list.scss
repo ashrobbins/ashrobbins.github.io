@@ -1,11 +1,6 @@
 /******************************************
 POST LIST
 ******************************************/
-.c-post-list .c-post + .c-post {
-    margin-top: rem-calc(40);
-    padding-top: rem-calc(40);
-    border-top: 1px solid $divider-color;
-}
 .c-post-list__item {
     overflow: hidden;
     margin-bottom: 2rem;

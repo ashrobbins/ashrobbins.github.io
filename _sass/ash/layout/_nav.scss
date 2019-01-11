@@ -17,7 +17,7 @@ NAV
     }
 
     &__link {
-        display: inline-block;
+        display: block;
         position: relative;
         color: $white;
         font-family: $title-font;
@@ -31,6 +31,10 @@ NAV
         &:hover,
         &.router-link-active {
             color: $primary-colour;
+        }
+
+        @media (max-width: 700px) {
+            font-size: 1.6rem;
         }
     }
 }
@@ -47,34 +51,5 @@ NAV
 
     &:hover {
         color: $primary-colour;
-    }
-}
-
-@include bp_max(700) {
-    .c-nav,
-    .c-nav-trigger {
-        width: rem-calc(120);
-        height: rem-calc(120);
-
-        &:hover {
-            width: rem-calc(120);
-            height: rem-calc(120);
-        }
-        &:hover path {
-            fill: $white;
-        }
-        &.open:hover {
-            width: 200%;
-            height: 200%;
-        }
-    }
-    .c-nav-trigger svg {
-        top: 1.6vh;
-        right: 1.6vh;
-        width: rem-calc(30);
-        height: rem-calc(30);
-    }
-    .c-nav__link {
-        font-size: rem-calc(30);
     }
 }

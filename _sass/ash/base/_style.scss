@@ -32,7 +32,7 @@ body {
     font: 62.5%/1.2 $body-font;
     color: $body-text;
     word-wrap: break-word;
-    font-size: rem-calc(22);
+    font-size: 2.2rem;
     line-height: 1.8;
     background-color: $black;
 
@@ -43,30 +43,34 @@ body {
             color: $white;
         }
     }
+
+    @media (max-width: 900px) {
+        font-size: 1.8rem;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 1.6rem;
+    }
 }
 #app {
     margin-bottom: rem-calc(60);
 }
 .c-wrapper {
-    width: 94%;
+    width: 90%;
     max-width: 100rem;
-    margin: 5vh auto 10vh;
+    margin: 5rem auto 10rem;
 
     &--home {
-        margin-top: 20vh;
+        margin-top: 20rem;
     }
-}
 
-@include bp_max(600) {
-    body {
-        font-size: rem-calc(13);
-    }
-    .c-wrapper {
-        width: 86vw;
-        margin-top: 4vh;
-    }
-    .c-wrapper--home {
-        margin-top: 50vmin;
+    @media (max-width: 900px) {
+
+        margin-top: 0;
+        
+        &--home {
+            margin-top: 10rem;
+        }
     }
 }
 
@@ -116,6 +120,10 @@ p {
     vertical-align: top;
     display: block;
     clear: both;
+
+    @media (max-width: 600px) {
+        margin-bottom: 1.4rem;
+    }
 }
 
 li {

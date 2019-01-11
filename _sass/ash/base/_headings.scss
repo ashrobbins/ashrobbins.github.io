@@ -14,15 +14,24 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .c-heading--site {
-    font-size: 10vmin;
+    font-size: 8rem;
     font-weight: 900;
+
+    @media (max-width: 900px) {
+        margin-bottom: 1.6rem;
+        font-size: 5rem;
+    }
 }
 .c-heading--tagline {
     display: inline;
     padding-top: rem-calc(10);
-    font-size: 4vmin;
+    font-size: 3.6rem;
     font-weight: 400;
     border-top: 5px solid $primary-colour;
+    
+    @media (max-width: 900px) {
+        font-size: 2rem;
+    }
 }
 .c-heading--page {
     font-size: rem-calc(50);
@@ -41,6 +50,10 @@ h1, h2, h3, h4, h5, h6,
     font-size: rem-calc(26);
     font-weight: 900;
     color: $white;
+
+    @media (max-width: 600px) {
+        margin-bottom: 1rem;
+    }
 }
 
 @include bp_max(600) {
@@ -52,7 +65,7 @@ h1, h2, h3, h4, h5, h6,
 
 @media only screen and (max-width: 500px) {
     .c-heading--page {
-        font-size: rem-calc(26);
+        font-size: rem-calc(30);
     }
     .c-heading--post {
         font-size: rem-calc(18);
