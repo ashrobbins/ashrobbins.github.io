@@ -6,6 +6,5 @@ tags:
 - rant
 
 ---
-* people desperate to be first to comment on anything
 * Being offended on behalf of someone else
 * Describing technology as adorable or beautiful or gorgeous
