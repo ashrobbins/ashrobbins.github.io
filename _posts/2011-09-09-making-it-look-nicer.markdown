@@ -2,7 +2,7 @@
 layout: post
 title:  "Making it look nicer"
 date:   2011-09-09 15:35:36 +0000
-categories: css
+tags: [css]
 ---
 Just thought I'd share a couple of cool things I've been using more and more in projects recently: `hyphens` and `::selection`. Both features are only available in newer versions of browsers, but the key with both of them is that anyone who can't support them won't know any different. It's progressive enhancement in action.
 

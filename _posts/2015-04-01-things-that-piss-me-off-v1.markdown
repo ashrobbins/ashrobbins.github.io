@@ -2,7 +2,7 @@
 layout: post
 title:  "Things that piss me off about the internet vol.1"
 date:   2015-04-01 15:35:36 +0000
-categories: rant
+tags: [rant]
 ---
 There are a lot of things that piss me off about the web industry and the internet in general, so I thought I'd start a series of posts where I can rant about them.
 

@@ -4,11 +4,9 @@
     {% include head.html %}
 
     <body>
-        {% include nav.html %}
-        {% include nav-trigger.html %}
+        {% include header.html %}
 
         <main class="c-wrapper" aria-label="Content">
-            {% include logo.html %}
             
             <h1 class="c-heading--page">{{ page.title | escape }}</h1>
             {{ content }}

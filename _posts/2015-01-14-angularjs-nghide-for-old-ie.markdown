@@ -2,7 +2,7 @@
 layout: post
 title:  "AngularJS - ngHide for oldIE"
 date:   2015-01-14 15:35:36 +0000
-categories: css angular
+tags: [css, angular]
 ---
 Yeah I know I know, old IEs are dumb and should be run over by a bus or thrown off a bridge and blah blah blah. But sometimes 20% of your client's users are using IE7, and another 20% on top of that use IE8, so you've got to deal with it.
 

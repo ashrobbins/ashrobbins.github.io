@@ -2,7 +2,7 @@
 layout: post
 title:  "A couple of problems I've found using Flexbox"
 date:   2013-08-02 15:35:36 +0000
-categories: css flexbox
+tags: [css, flexbox]
 ---
 Let me preface this post by saying that Flexbox is completely ace, and there are so many awesome use-cases for it. The particular one I'm going to talk about here is a grid layout for a product listing. Four columns, two rows, and just a simple image and price for each item. The site I'm working on is WIP but as an example let's say it could be the grid of products in the pen below. (Will only work in Chrome and latest Opera).
 

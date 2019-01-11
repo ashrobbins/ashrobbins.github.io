@@ -2,7 +2,7 @@
 layout: post
 title:  "String interpolation with template literals"
 date:   2018-02-09 10:00:36 +0000
-categories: js
+tags: [js, es6]
 ---
 One useful feature in ES6 that I came across recently is template literals. Template literals can be used to store a sequence of characters in much the same way as string literals, but they come with some added bonuses.
 

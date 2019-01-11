@@ -2,7 +2,7 @@
 layout: post
 title:  "Quickie on CSS weight"
 date:   2013-01-11 15:35:36 +0000
-categories: css
+tags: [css]
 ---
 In this completely made up and unrealistic example, which version is heavier? This...
 

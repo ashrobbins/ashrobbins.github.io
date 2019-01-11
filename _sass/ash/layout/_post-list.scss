@@ -6,12 +6,16 @@ POST LIST
     padding-top: rem-calc(40);
     border-top: 1px solid $divider-color;
 }
+.c-post-list__item {
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
 .c-post-list__link {
     position: relative;
-    color: $black;
+    color: $white;
 
     &:visited {
-        color: $black;
+        color: $white;
     }
     &:before {
         content: "";

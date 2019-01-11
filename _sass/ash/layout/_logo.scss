@@ -4,13 +4,17 @@ LOGO
 .c-logo,
 .c-logo:visited {
     display: inline-block;
-    margin-bottom: rem-calc(50);
     padding-bottom: rem-calc(5);
     font-family: $title-font;
-    font-size: rem-calc(40);
+    font-size: rem-calc(43);
+    font-weight: 900;
     line-height: 1;
-    color: $black;
-    border-bottom: 5px solid $black;
+    color: $white;
+    border-bottom: 5px solid $primary-colour;
+
+    &:hover {
+        color: $primary-colour;
+    }
 }
 
 @include bp_max(600) {

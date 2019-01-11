@@ -4,10 +4,12 @@
     {% include head.html %}
 
     <body class="home">
-        {% include nav.html %}
-        {% include nav-trigger.html %}
+        <header class="c-header c-header--home c-wrapper">
+            {% include logo.html %}
+            {% include nav.html %}
+        </header>
 
-        <main class="c-wrapper--home" aria-label="Content">
+        <main class="c-wrapper c-wrapper--home" aria-label="Content">
             <h1 class="c-heading--site">{{ site.title }}</h1>
             <h2 class="c-heading--tagline">{{ page.tagline }}</h2>
         </main>

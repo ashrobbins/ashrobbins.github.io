@@ -2,7 +2,7 @@
 layout: post
 title:  "Angular scope in your console"
 date:   2015-07-21 15:35:36 +0000
-categories: angular
+tags: [angular]
 ---
 Sometimes it can be really useful to inspect the data you're working with on an Angular build. There are some plugins and extensions to help with this, like the Batarang extension for Chrome.
 

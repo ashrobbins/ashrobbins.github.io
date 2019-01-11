@@ -4,6 +4,6 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 title: "Ash Robbins"
-tagline: "Front End Developer at Redweb"
+tagline: "Front end developer"
 exclude: true
 ---

@@ -7,7 +7,7 @@ layout: default
 {% if site.posts.size > 0 %}
 <ul class="c-post-list u-no-list">
   {% for post in site.posts %}
-  <li>
+  <li class="c-post-list__item">
     {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
     <span class="c-post__date">{{ post.date | date: date_format }}</span>
     <h3 class="c-heading--post">

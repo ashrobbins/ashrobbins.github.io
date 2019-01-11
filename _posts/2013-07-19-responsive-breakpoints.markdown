@@ -2,7 +2,7 @@
 layout: post
 title:  "Responsive breakpoints"
 date:   2013-07-19 15:35:36 +0000
-categories: css responsive
+tags: [css, responsive]
 ---
 I just read this quote in .Net magazine:
 

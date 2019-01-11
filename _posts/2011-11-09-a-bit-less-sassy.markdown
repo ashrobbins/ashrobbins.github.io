@@ -2,7 +2,7 @@
 layout: post
 title:  "A bit LESS SASSy"
 date:   2011-11-09 15:35:36 +0000
-categories: css scss
+tags: [css]
 ---
 For quite some time now people have been raving about LESS and SASS and the benefits they have over writing single scoop vanilla CSS. Allow me, if I may, to wade in and add a few of my thoughts on why, instead of choosing one or the other, neither of them are necessary to me at all.
 

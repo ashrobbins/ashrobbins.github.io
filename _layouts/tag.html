@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+    {% include head.html %}
+
+    <body>
+        {% include header.html %}
+
+        <main class="c-wrapper" aria-label="Content">
+            
+            <h1 class="c-heading--page">#{{ page.tag }}</h1>
+
+            {{ content }}
+
+            {% if site.tags[page.tag].size > 0 %}
+                <ul class="c-post-list u-no-list">
+                    {% for post in site.tags[page.tag] %}
+                        <li class="c-post-list__item">
+                            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                            <span class="c-post__date">{{ post.date | date: date_format }}</span>
+                            <h3 class="c-heading--post">
+                                <a class="c-post-list__link" href="{{ post.url | relative_url }}">
+                                    {{ post.title | escape }}
+                                </a>
+                            </h3>
+                            {% if site.show_excerpts %}
+                                {{ post.excerpt }}
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+
+            </main>
+
+        {% include scripts.html %}
+    </body>
+
+</html>

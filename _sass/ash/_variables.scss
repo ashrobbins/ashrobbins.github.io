@@ -13,16 +13,18 @@ $black: #2a2a2a;
 $white: #fefefe;
 $grey: #888;
 $light-grey: #eee;
+$dark-grey: #3a3a3a;
+$yellow: #e8e867;
 
 $divider-color: #e4e4e4;
 
 // Font colours
-$body-text: #4a4a4a;
+$body-text: $white;
 
 // Variables for site fonts
-$title-font: "Oswald", Arial, 'Helvetica Neue', Helvetica, sans-serif;
-$body-font: "Open Sans", Arial, 'Helvetica Neue', Helvetica, sans-serif;
-$serif-font: "Open Sans", serif;
+$title-font: "Fira Sans", Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$body-font: "Fira Sans", Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$serif-font: "Fira Sans", serif;
 
 // Grid system
 $maxColCount: 12;

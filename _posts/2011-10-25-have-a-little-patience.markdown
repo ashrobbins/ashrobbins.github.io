@@ -2,11 +2,11 @@
 layout: post
 title:  "Have A Little Patience"
 date:   2011-10-25 15:35:36 +0000
-categories: general
+tags: [general]
 ---
 We've all been there. The phone rings or an email arrives from a client asking the most basic of questions, that you know you've already answered for them a thousand times before. The gut reaction is to swear and shout at your screen in frustration at the sheer dip-shittedness of the people you're supporting.
 
-I had one today in fact. I've been working on a new site template for a client over the past few months, and they've seen it several times before. But they choose today, when we're nearing the end of the process, to ask whether their two columned design can take banners in a third, currently non-existent, column. Obviously my reaction to reading this was 'What the hell? No of course it can't take banners there! Why didn't you tell me you wanted three columns in the first place?! Jason Christ!'. But now I've simmered down, my stance has changed a bit, hence the reason for writing this post.
+I had one today in fact. I've been working on a new site template for a client over the past few months, and they've seen it several times before. But they choose today, when we're nearing the end of the process, to ask whether their two columned design can take banners in a third, currently non-existent, column. Obviously my reaction to reading this was 'What the hell? No of course it can't take banners there! Why didn't you tell me you wanted three columns in the first place?! Jesus Christ!'. But now I've simmered down, my stance has changed a bit, hence the reason for writing this post.
 
 The fact is, our clients don't actually know very much about the way the web works. At all. It's not unlikely for a network support guy to get asked if he can fix a website that's gone down, even if it's completely unrelated to the company he works for. A friend of mine works in the IT team at a school and recently the internet was down in their area due to a cock-up by the council. But all the teachers thought that the IT team should be able to fix the internet. If it can be seen on their computer screen then the assumption is that anyone who has a slightly IT related job can fix it.
 
