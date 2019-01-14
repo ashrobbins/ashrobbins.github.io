@@ -16,3 +16,5 @@ fields:
 - type: tag_list
   name: tags
   label: Tags
+pages:
+- _posts/things-that-piss-me-off-about-the-internet-vol-2.md
