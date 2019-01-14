@@ -16,11 +16,3 @@ fields:
 - type: tag_list
   name: tags
   label: Tags
-- type: textarea
-  name: content
-  label: Content
-  config:
-    required: true
-    wysiwyg: true
-    schema:
-      format: markdown
