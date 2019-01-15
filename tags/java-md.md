@@ -1,7 +1,8 @@
 ---
 layout: tag
-tag: flexbox
-permalink: "/tag/flexbox/"
+tag:
+- java
+permalink: "/tag/java/"
 title: java.md
 published: false
 
