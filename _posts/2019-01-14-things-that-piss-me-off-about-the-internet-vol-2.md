@@ -6,11 +6,12 @@ tags:
 
 ---
 <blockquote class="twitter-tweet" data-lang="en">
-    <p lang="und" dir="ltr">👑👑👑💫💫💫 <a href="https://t.co/RhCXAj1AqB">pic.twitter.com/RhCXAj1AqB</a></p>
-    &mdash; Andrés Iniesta (@andresiniesta8) <a href="https://twitter.com/andresiniesta8/status/1081989025710436357">January 6, 2019</a>
+<p lang="und" dir="ltr">👑👑👑💫💫💫 <a href="https://t.co/RhCXAj1AqB">pic.twitter.com/RhCXAj1AqB</a></p>
+— Andrés Iniesta (@andresiniesta8) <a href="https://twitter.com/andresiniesta8/status/1081989025710436357">January 6, 2019</a>
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-Offence by proxy
+
+## Offence by proxy
 
 We live in a world these days where everyone is offended by everything and it's bloody boring. You genuinely can't say a single word out of place online without someone somewhere thinking you have offended, misappropriated, been sexist, racist, homophobic.
 
