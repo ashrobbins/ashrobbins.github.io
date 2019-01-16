@@ -13,9 +13,4 @@ Can we all just get a grip? I will admit that in some cases people are deliberat
 
 A recent example is this tweet from Andrés Iniesta.
 
-{::options parse_block_html="false" /}
-<blockquote class="twitter-tweet" data-lang="en"><p lang="und" dir="ltr">👑👑👑💫💫💫 <a href="https://t.co/RhCXAj1AqB">pic.twitter.com/RhCXAj1AqB</a></p>&mdash; Andrés Iniesta (@andresiniesta8) <a href="[https://twitter.com/andresiniesta8/status/1081989025710436357?ref_src=twsrc%5Etfw](https://twitter.com/andresiniesta8/status/1081989025710436357?ref_src=twsrc%5Etfw "https://twitter.com/andresiniesta8/status/1081989025710436357?ref_src=twsrc%5Etfw")">January 6, 2019</a></blockquote>
-
-<script async src="[https://platform.twitter.com/widgets.js](https://platform.twitter.com/widgets.js "https://platform.twitter.com/widgets.js")" charset="utf-8"></script>
-
 * Describing technology as adorable or beautiful or gorgeous
