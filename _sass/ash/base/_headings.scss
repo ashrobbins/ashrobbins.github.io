@@ -35,9 +35,12 @@ h1, h2, h3, h4, h5, h6,
 }
 .c-heading--page {
     font-size: rem-calc(50);
-    font-size: 6vmin;
     font-weight: 900;
     margin-bottom: rem-calc(80);
+
+    @media (max-width: 900px) {
+        font-size: 3rem;
+    }
 }
 .c-heading--section {
     margin-bottom: rem-calc(30);

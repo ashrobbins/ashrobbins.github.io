@@ -44,6 +44,9 @@ POST
     }
 }
 .c-post {
+    max-width: 73rem;
+    margin: auto;
+
     h2,
     h3,
     h4,
@@ -127,10 +130,6 @@ POST
         .s2 {
             color: $yellow;
         }
-    }
-
-    &__content {
-        max-width: 73rem;
     }
 }
 

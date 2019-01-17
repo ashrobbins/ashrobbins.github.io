@@ -1532,9 +1532,11 @@ h1, h2, h3, h4, h5, h6,
 
 .c-heading--page {
   font-size: 5rem;
-  font-size: 6vmin;
   font-weight: 900;
   margin-bottom: 8rem; }
+  @media (max-width: 900px) {
+    .c-heading--page {
+      font-size: 3rem; } }
 
 .c-heading--section {
   margin-bottom: 3rem;
@@ -1675,54 +1677,55 @@ POST
   .c-post__tag__link:before {
     display: none; }
 
-.c-post h2,
-.c-post h3,
-.c-post h4,
-.c-post h5,
-.c-post h6 {
-  margin-top: 3rem; }
-.c-post h2 {
-  font-size: 3.4rem;
-  font-weight: 900; }
-.c-post h3 {
-  font-size: 3rem;
-  font-weight: 900; }
-.c-post h4 {
-  font-size: 2.6rem; }
-.c-post h5 {
-  font-size: 2.2rem; }
-.c-post h6 {
-  font-size: 1.8rem; }
-.c-post pre,
-.c-post code {
-  border: 0;
-  border-radius: 0; }
-.c-post pre {
-  margin: 3rem 0;
-  padding: 2rem 3rem;
-  background-color: #3a3a3a;
-  border-left: 0.5rem solid #e8e867; }
-  .c-post pre code {
-    padding: 0;
-    color: #fefefe;
-    background-color: transparent; }
-.c-post code {
-  padding: 0.3rem 0.6rem;
-  color: #e8e867;
-  background-color: #3a3a3a;
-  font-size: 1.6rem; }
-.c-post blockquote {
-  margin: 3rem 0;
-  padding: 2rem 3rem;
-  border-left: 10px solid #ff5158;
-  background-color: rgba(255, 81, 88, 0.1);
-  font-family: "Fira Sans", serif;
-  font-size: 1em;
-  color: #fefefe; }
-.c-post .highlight .s2 {
-  color: #e8e867; }
-.c-post__content {
-  max-width: 73rem; }
+.c-post {
+  max-width: 73rem;
+  margin: auto; }
+  .c-post h2,
+  .c-post h3,
+  .c-post h4,
+  .c-post h5,
+  .c-post h6 {
+    margin-top: 3rem; }
+  .c-post h2 {
+    font-size: 3.4rem;
+    font-weight: 900; }
+  .c-post h3 {
+    font-size: 3rem;
+    font-weight: 900; }
+  .c-post h4 {
+    font-size: 2.6rem; }
+  .c-post h5 {
+    font-size: 2.2rem; }
+  .c-post h6 {
+    font-size: 1.8rem; }
+  .c-post pre,
+  .c-post code {
+    border: 0;
+    border-radius: 0; }
+  .c-post pre {
+    margin: 3rem 0;
+    padding: 2rem 3rem;
+    background-color: #3a3a3a;
+    border-left: 0.5rem solid #e8e867; }
+    .c-post pre code {
+      padding: 0;
+      color: #fefefe;
+      background-color: transparent; }
+  .c-post code {
+    padding: 0.3rem 0.6rem;
+    color: #e8e867;
+    background-color: #3a3a3a;
+    font-size: 1.6rem; }
+  .c-post blockquote {
+    margin: 3rem 0;
+    padding: 2rem 3rem;
+    border-left: 10px solid #ff5158;
+    background-color: rgba(255, 81, 88, 0.1);
+    font-family: "Fira Sans", serif;
+    font-size: 1em;
+    color: #fefefe; }
+  .c-post .highlight .s2 {
+    color: #e8e867; }
 
 @media all and (max-width: 37.5em) {
   .c-post__date {
