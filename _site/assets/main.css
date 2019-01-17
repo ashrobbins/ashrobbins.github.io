@@ -1721,6 +1721,8 @@ POST
   color: #fefefe; }
 .c-post .highlight .s2 {
   color: #e8e867; }
+.c-post__content {
+  max-width: 73rem; }
 
 @media all and (max-width: 37.5em) {
   .c-post__date {
