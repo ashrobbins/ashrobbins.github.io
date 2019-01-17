@@ -125,6 +125,12 @@ POST
         font-size: 1em;
         color: $body-text;
     }
+
+    &__content {
+        font-family: Georgia;
+        color: #ddd;
+    }
+
     .highlight {
 
         .s2 {

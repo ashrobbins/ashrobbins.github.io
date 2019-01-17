@@ -1724,6 +1724,9 @@ POST
     font-family: "Fira Sans", serif;
     font-size: 1em;
     color: #fefefe; }
+  .c-post__content {
+    font-family: Georgia;
+    color: #ddd; }
   .c-post .highlight .s2 {
     color: #e8e867; }
 
