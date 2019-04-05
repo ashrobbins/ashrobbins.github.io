@@ -5,3 +5,6 @@ tags:
 - css
 
 ---
+Ensure images on your site always remain at a nice 16:9 aspect ratio with this handy little hack.
+
+Set the `width` of the image to `100%`, and then set the `height` to 
