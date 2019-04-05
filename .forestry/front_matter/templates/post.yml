@@ -16,6 +16,7 @@ fields:
   name: tags
   label: Tags
 pages:
+- _posts/svg-gradients-in-css.md
 - _posts/16-9-images-hack.md
 - _posts/2019-01-14-things-that-piss-me-off-about-the-internet-vol-2.md
 - _posts/2019-01-14-switching-java-version-in-terminal.md
