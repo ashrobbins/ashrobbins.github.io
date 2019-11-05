@@ -1263,16 +1263,23 @@ body {
 .c-wrapper, .c-single-post .c-post__content pre code,
 .c-single-post .c-post__content blockquote > * {
   width: 90%;
-  max-width: 100rem;
-  margin: 5rem auto 10rem; }
+  max-width: 120rem;
+  margin: 5rem auto; }
+  .c-wrapper + .c-wrapper, .c-single-post .c-post__content pre code + .c-wrapper,
+  .c-single-post .c-post__content blockquote > * + .c-wrapper, .c-single-post .c-post__content pre .c-wrapper + code, .c-single-post .c-post__content pre code + code,
+  .c-single-post .c-post__content pre blockquote > * + code,
+  .c-single-post .c-post__content blockquote > .c-wrapper + *,
+  .c-single-post .c-post__content pre blockquote > code + *,
+  .c-single-post .c-post__content blockquote > * + * {
+    min-height: calc(100vh - 29.2rem); }
   .c-wrapper--home {
-    margin-top: 20rem; }
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 4rem; }
   @media (max-width: 900px) {
     .c-wrapper, .c-single-post .c-post__content pre code,
     .c-single-post .c-post__content blockquote > * {
-      margin-top: 0; }
-      .c-wrapper--home {
-        margin-top: 10rem; } }
+      margin-top: 0; } }
 
 h1,
 h2,
@@ -1513,19 +1520,16 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 700; }
 
 .c-heading--site {
-  font-size: 8rem;
-  font-weight: 900; }
-  @media (max-width: 900px) {
-    .c-heading--site {
-      margin-bottom: 1.6rem;
-      font-size: 5rem; } }
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1.6rem; }
 
 .c-heading--tagline {
   display: inline;
   padding-top: 1rem;
-  font-size: 3.6rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  border-top: 5px solid #ff5158; }
+  border-top: 3px solid #ff5158; }
   @media (max-width: 900px) {
     .c-heading--tagline {
       font-size: 2rem; } }
@@ -1533,9 +1537,11 @@ h1, h2, h3, h4, h5, h6,
 .c-heading--page {
   font-size: 5rem;
   font-weight: 900;
+  text-align: center;
   margin-bottom: 8rem; }
   @media (max-width: 900px) {
     .c-heading--page {
+      margin-bottom: 1rem;
       font-size: 3rem; } }
 
 .c-heading--section {
@@ -1553,14 +1559,7 @@ h1, h2, h3, h4, h5, h6,
     .c-heading--post {
       margin-bottom: 1rem; } }
 
-@media all and (max-width: 37.5em) {
-  .c-heading--page {
-    margin-right: 7rem;
-    margin-bottom: 3rem; } }
 @media only screen and (max-width: 500px) {
-  .c-heading--page {
-    font-size: 3rem; }
-
   .c-heading--post {
     font-size: 1.8rem; } }
 /******************************************
@@ -1581,6 +1580,31 @@ HEADER
 .c-header__home-link {
   display: block;
   color: #2a2a2a; }
+
+.c-site-footer {
+  background-color: #ff5158;
+  color: #fefefe; }
+  .c-site-footer .c-wrapper, .c-site-footer .c-single-post .c-post__content pre code, .c-single-post .c-post__content pre .c-site-footer code,
+  .c-site-footer .c-single-post .c-post__content blockquote > *,
+  .c-single-post .c-post__content .c-site-footer blockquote > * {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 2rem 0; }
+
+.c-copyright {
+  margin: 0;
+  font-size: 1.4rem; }
+
+.c-social-nav {
+  display: flex;
+  margin: 0 0 0 auto;
+  list-style: none; }
+  .c-social-nav__item {
+    margin-left: 2rem;
+    margin-bottom: 0; }
+  .c-social-nav__link:hover {
+    color: #2a2a2a; }
 
 /******************************************
 LOGO
@@ -1723,11 +1747,21 @@ POST
     background-color: rgba(255, 81, 88, 0.1);
     font-family: "Fira Sans", serif;
     font-size: 1em;
-    color: #fefefe; }
+    font-style: normal;
+    color: #f2e8e8; }
   .c-post__content {
     color: #ddd; }
   .c-post .highlight .s2 {
     color: #e8e867; }
+  .c-post .highlight,
+  .c-post blockquote {
+    width: calc(100% + 10rem);
+    margin-left: -5rem; }
+    @media (max-width: 900px) {
+      .c-post .highlight,
+      .c-post blockquote {
+        width: 100%;
+        margin-left: 0rem; } }
 
 @media all and (max-width: 37.5em) {
   .c-post__date {

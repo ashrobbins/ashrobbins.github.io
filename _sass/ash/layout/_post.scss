@@ -123,7 +123,8 @@ POST
         background-color: rgba(255, 81, 88, .1);
         font-family: $serif-font;
         font-size: 1em;
-        color: $body-text;
+        font-style: normal;
+        color: #f2e8e8;
     }
 
     &__content {
@@ -134,6 +135,17 @@ POST
 
         .s2 {
             color: $yellow;
+        }
+    }
+
+    .highlight,
+    blockquote {
+        width: calc(100% + 10rem);
+        margin-left: -5rem;
+
+        @media (max-width: 900px) {
+            width: 100%;
+            margin-left: 0rem;
         }
     }
 }

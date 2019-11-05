@@ -7,10 +7,12 @@
         {% include header.html %}
 
         <main class="c-wrapper" aria-label="Content">
-            
+
             <h1 class="c-heading--page">{{ page.title | escape }}</h1>
             {{ content }}
         </main>
+
+        {% include footer.html %}
 
         {% include scripts.html %}
     </body>

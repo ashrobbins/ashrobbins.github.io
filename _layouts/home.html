@@ -10,9 +10,34 @@
         </header>
 
         <main class="c-wrapper c-wrapper--home" aria-label="Content">
-            <h1 class="c-heading--site">{{ site.title }}</h1>
-            <h2 class="c-heading--tagline">{{ page.tagline }}</h2>
+            <aside class-"c-site-intro">
+                <h1 class="c-heading--site">{{ site.title }}</h1>
+                <h2 class="c-heading--tagline">{{ page.tagline }}</h2>
+            </aside>
+
+            <section class="c-post-list">
+                {% if site.posts.size > 0 %}
+                <ul class="c-post-list u-no-list">
+                    {% for post in site.posts %}
+                    <li class="c-post-list__item">
+                    {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                    <span class="c-post__date">{{ post.date | date: date_format }}</span>
+                    <h3 class="c-heading--post">
+                        <a class="c-post-list__link" href="{{ post.url | relative_url }}">
+                        {{ post.title | escape }}
+                        </a>
+                    </h3>
+                    {% if site.show_excerpts %}
+                        {{ post.excerpt }}
+                    {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </section>
         </main>
+
+        {% include footer.html %}
 
         {% include scripts.html %}
     </body>

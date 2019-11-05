@@ -57,20 +57,22 @@ body {
 }
 .c-wrapper {
     width: 90%;
-    max-width: 100rem;
-    margin: 5rem auto 10rem;
+    max-width: 120rem;
+    margin: 5rem auto;
+
+    & + & {
+        min-height: calc(100vh - 29.2rem);
+    }
 
     &--home {
-        margin-top: 20rem;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 4rem;
     }
 
     @media (max-width: 900px) {
 
         margin-top: 0;
-        
-        &--home {
-            margin-top: 10rem;
-        }
     }
 }
 
