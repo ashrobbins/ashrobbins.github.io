@@ -14,7 +14,9 @@ Our QA team raised a bug on certain iOS devices where the list would always snap
 
 After a fair amount of head scrartching this was fixed by adding
 
-    -webkit-overflow-scrolling: touch;
+{% highlight css %}  
+\-webkit-overflow-scrolling: touch;  
+{% endhighlight %}
 
 to the container element.
 
