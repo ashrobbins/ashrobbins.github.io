@@ -139,7 +139,8 @@ POST
     }
 
     .highlight,
-    blockquote {
+    blockquote,
+    iframe {
         width: calc(100% + 10rem);
         margin-left: -5rem;
 
