@@ -4,7 +4,7 @@ title: About
 permalink: "/about/"
 
 ---
-I'm a front end developer living in the (mostly) sunny south west of England, with over 10 years of experience building stuff for the web.
+![](/assets/img/ash.png =100x)I'm a front end developer living in the (mostly) sunny south west of England, with over 10 years of experience building stuff for the web.
 
 I'm currently working for [Pulselive](http://www.pulselive.com), where we build some really cool sites and apps for clients in the sporting world.
 
