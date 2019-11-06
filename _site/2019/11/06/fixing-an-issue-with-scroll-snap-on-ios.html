@@ -1,0 +1,13 @@
+<p>On one of our sites we have a grid of article thumbnails that becomes horizontally scrollable on mobile, and we’ve used <code class="highlighter-rouge">scroll-snap</code> on the container element to give a more carousel-like feel and make sure that the list always snaps to the edge of one of the items.</p>
+
+<p>Our QA team raised a bug on certain iOS devices where the list would always snap back to the first item and not scroll through as the user expected.</p>
+
+<p><img src="https://media.giphy.com/media/ZdNd2oQCV3yrMrfpZs/giphy.gif" alt="" /></p>
+
+<p>After a fair amount of head scrartching this was fixed by adding</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">-webkit-overflow-scrolling</span><span class="o">:</span> <span class="nt">touch</span><span class="o">;</span></code></pre></figure>
+
+<p>to the container element.</p>
+
+<p><img src="https://media.giphy.com/media/d7BjVQoKpG0WhxchJY/giphy.gif" alt="" /></p>

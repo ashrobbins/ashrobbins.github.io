@@ -1762,6 +1762,10 @@ POST
       .c-post blockquote {
         width: 100%;
         margin-left: 0rem; } }
+  .c-post p img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); }
 
 @media all and (max-width: 37.5em) {
   .c-post__date {

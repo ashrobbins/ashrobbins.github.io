@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-06T09:54:15+00:00</updated><id>http://localhost:4000/</id><title type="html">Ash Robbins</title><subtitle>Front End Developer</subtitle><entry><title type="html">Switching Java version in terminal</title><link href="http://localhost:4000/2019/01/15/switching-java-version-in-terminal.html" rel="alternate" type="text/html" title="Switching Java version in terminal " /><published>2019-01-15T00:00:00+00:00</published><updated>2019-01-15T00:00:00+00:00</updated><id>http://localhost:4000/2019/01/15/switching-java-version-in-terminal</id><content type="html" xml:base="http://localhost:4000/2019/01/15/switching-java-version-in-terminal.html">&lt;p&gt;I was trying to run a maven command the other day and it kept failing due to my version of Java being too recent. You can quickly find out what version of Java you’re using with the command &lt;code class=&quot;highlighter-rouge&quot;&gt;java -version&lt;/code&gt;, which will give you an output like this…&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-06T09:56:57+00:00</updated><id>http://localhost:4000/</id><title type="html">Ash Robbins</title><subtitle>Front End Developer</subtitle><entry><title type="html">Fixing an issue with scroll-snap on iOS</title><link href="http://localhost:4000/2019/11/06/fixing-an-issue-with-scroll-snap-on-ios.html" rel="alternate" type="text/html" title="Fixing an issue with scroll-snap on iOS" /><published>2019-11-06T00:00:00+00:00</published><updated>2019-11-06T00:00:00+00:00</updated><id>http://localhost:4000/2019/11/06/fixing-an-issue-with-scroll-snap-on-ios</id><content type="html" xml:base="http://localhost:4000/2019/11/06/fixing-an-issue-with-scroll-snap-on-ios.html">&lt;p&gt;On one of our sites we have a grid of article thumbnails that becomes horizontally scrollable on mobile, and we’ve used &lt;code class=&quot;highlighter-rouge&quot;&gt;scroll-snap&lt;/code&gt; on the container element to give a more carousel-like feel and make sure that the list always snaps to the edge of one of the items.&lt;/p&gt;
+
+&lt;p&gt;Our QA team raised a bug on certain iOS devices where the list would always snap back to the first item and not scroll through as the user expected.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/ZdNd2oQCV3yrMrfpZs/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After a fair amount of head scrartching this was fixed by adding&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;-webkit-overflow-scrolling&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;touch&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;to the container element.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/d7BjVQoKpG0WhxchJY/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="css" /><category term="mobile" /><summary type="html">On one of our sites we have a grid of article thumbnails that becomes horizontally scrollable on mobile, and we’ve used scroll-snap on the container element to give a more carousel-like feel and make sure that the list always snaps to the edge of one of the items.</summary></entry><entry><title type="html">Switching Java version in terminal</title><link href="http://localhost:4000/2019/01/15/switching-java-version-in-terminal.html" rel="alternate" type="text/html" title="Switching Java version in terminal " /><published>2019-01-15T00:00:00+00:00</published><updated>2019-01-15T00:00:00+00:00</updated><id>http://localhost:4000/2019/01/15/switching-java-version-in-terminal</id><content type="html" xml:base="http://localhost:4000/2019/01/15/switching-java-version-in-terminal.html">&lt;p&gt;I was trying to run a maven command the other day and it kept failing due to my version of Java being too recent. You can quickly find out what version of Java you’re using with the command &lt;code class=&quot;highlighter-rouge&quot;&gt;java -version&lt;/code&gt;, which will give you an output like this…&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;java&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;10.0.2&quot;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2018&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;07&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
@@ -189,40 +201,4 @@
 
 &lt;p&gt;I never thought the idea of having pre-defined breakpoints for iPhone, iPad and desktop etc was particularly useful, and in fact it seems much more aligned with an adaptive layout. Even when responsive design was just a baby there were already hundreds of devices with different widths so setting a few different breakpoints has never made sense.&lt;/p&gt;
 
-&lt;p&gt;At the end of the day it’s in the name: breakpoint. Find out where your design breaks, then fix it.&lt;/p&gt;</content><author><name></name></author><category term="css" /><category term="responsive" /><summary type="html">I just read this quote in .Net magazine:</summary></entry><entry><title type="html">Quickie on CSS weight</title><link href="http://localhost:4000/2013/01/11/quickie-on-css-weight.html" rel="alternate" type="text/html" title="Quickie on CSS weight" /><published>2013-01-11T15:35:36+00:00</published><updated>2013-01-11T15:35:36+00:00</updated><id>http://localhost:4000/2013/01/11/quickie-on-css-weight</id><content type="html" xml:base="http://localhost:4000/2013/01/11/quickie-on-css-weight.html">&lt;p&gt;In this completely made up and unrealistic example, which version is heavier? This…&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.main-nav&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;.main-nav&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.5em&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;.main-nav&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;or…&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.main-nav&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.5em&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;.main-nav&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.5em&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;I’m pretty certain that version one is better because there are only two actual declarations as opposed to three in version two. Just confused me momentarily because they are technically both seven lines of CSS, and only 10 characters different in length.&lt;/p&gt;
-
-&lt;h3 id=&quot;update&quot;&gt;Update&lt;/h3&gt;
-
-&lt;p&gt;I had a reply to this question from Harry Roberts, A.K.A. &lt;a href=&quot;&amp;quot;http://www.twitter.com/csswizardry&amp;quot;&quot;&gt;@csswizardry&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Here, it’s not about the weight of the CSS that matters, it’s the sensibility of its architecture. The simplest test is just looking out for repetition.&lt;/p&gt;
-
-  &lt;p&gt;Repetition should be avoided, not necessarily from a weight point of view (repetition actually compresses (e.g. gzip) better than non-repeated strings) but from a maintainability point of view. The problem with repetition in CSS is the maintenance overhead.&lt;/p&gt;
-
-  &lt;p&gt;In the second example you are repeating &lt;code class=&quot;highlighter-rouge&quot;&gt;padding:0.5em 1em&lt;/code&gt; twice, this means that should you need to change it to &lt;code class=&quot;highlighter-rouge&quot;&gt;padding:1em 2em&lt;/code&gt; you would have to make that change twice.&lt;/p&gt;
-
-  &lt;p&gt;Your declarations are more likely to change than your selectors; your selectors are likely to remain fairly constant (you’re more likely to change the &lt;code class=&quot;highlighter-rouge&quot;&gt;padding&lt;/code&gt; values than you are to change &lt;code class=&quot;highlighter-rouge&quot;&gt;.main-nav a{}&lt;/code&gt;) so author your CSS to make these changes as easy as possible to implement.&lt;/p&gt;
-
-  &lt;p&gt;Hope that helps, H&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name></name></author><category term="css" /><summary type="html">In this completely made up and unrealistic example, which version is heavier? This…</summary></entry></feed>
+&lt;p&gt;At the end of the day it’s in the name: breakpoint. Find out where your design breaks, then fix it.&lt;/p&gt;</content><author><name></name></author><category term="css" /><category term="responsive" /><summary type="html">I just read this quote in .Net magazine:</summary></entry></feed>
