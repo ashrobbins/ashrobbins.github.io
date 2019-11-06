@@ -148,6 +148,12 @@ POST
             margin-left: 0rem;
         }
     }
+
+    p img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 @include bp_max(600) {
