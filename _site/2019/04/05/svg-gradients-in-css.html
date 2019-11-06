@@ -1,0 +1,14 @@
+<p><a href="https://codepen.io/ashrobbins/pen/YMJEMX" title="https://codepen.io/ashrobbins/pen/YMJEMX">https://codepen.io/ashrobbins/pen/YMJEMX</a></p>
+
+<p>On a recent project we were building a new home page hero widget and the design called for the user to be able to select from a set of themes to decide what colour the hero should be.</p>
+
+<p>They do this by assigning a ‘Theme-xx’ tag to the content item, and then we apply a class to the hero based on the theme tag used. Simple enough, we have a BEM modifier class that switches out colours based on the chosen tag.</p>
+
+<p>One part of the design however is an SVG background graphic that has a gradient running left to right. Instead of having multiple SVGs in the page that get shown or hidden based on a class, I wanted to see if there was a cleverer way to do it.</p>
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="SVG Gradient Tags" src="https://codepen.io/ashrobbins/embed/YMJEMX?height=265&amp;theme-id=dark&amp;default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/ashrobbins/pen/YMJEMX">SVG Gradient Tags</a> by Ash Robbins
+  (<a href="https://codepen.io/ashrobbins">@ashrobbins</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<p>As you can see in the pen above I’ve got a hidden svg which simply contains several <code class="highlighter-rouge">linearGradient</code> tags, each with an <code class="highlighter-rouge">id</code> and two or more <code class="highlighter-rouge">stop</code> tags within it. These are where the colours for the gradients are defined. We can then use css to update the <code class="highlighter-rouge">fill</code> property of the <code class="highlighter-rouge">path</code> element based on an id of one of the <code class="highlighter-rouge">linearGradient</code> tags, and the gradient used gets updated.</p>
