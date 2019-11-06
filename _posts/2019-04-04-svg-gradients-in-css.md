@@ -6,8 +6,6 @@ tags:
 - svg
 
 ---
-[https://codepen.io/ashrobbins/pen/YMJEMX](https://codepen.io/ashrobbins/pen/YMJEMX "https://codepen.io/ashrobbins/pen/YMJEMX")
-
 On a recent project we were building a new home page hero widget and the design called for the user to be able to select from a set of themes to decide what colour the hero should be.
 
 They do this by assigning a 'Theme-xx' tag to the content item, and then we apply a class to the hero based on the theme tag used. Simple enough, we have a BEM modifier class that switches out colours based on the chosen tag.
