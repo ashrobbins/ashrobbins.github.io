@@ -1764,6 +1764,8 @@ POST
       .c-post iframe {
         width: 100%;
         margin-left: 0rem; } }
+  .c-post iframe {
+    margin-bottom: 2rem; }
   .c-post p img {
     position: relative;
     left: 50%;
