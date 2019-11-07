@@ -1674,6 +1674,7 @@ POST
 ******************************************/
 .c-post__meta {
   display: flex;
+  justify-content: center;
   margin-bottom: 4rem;
   font-size: 2rem; }
   .c-post__meta-on {
