@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: "/about/"
+title: Who?
+permalink: "/who/"
 
 ---
 <img src="/assets/img/ash.png" width="100" style="float: left; left: -1rem; transform: none; top: -2rem;" />Alright? I'm a front end developer living in the (mostly) sunny south west of England, with over 10 years of experience building stuff for the web.
