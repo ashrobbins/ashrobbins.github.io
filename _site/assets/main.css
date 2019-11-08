@@ -1276,17 +1276,17 @@ body {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-column-gap: 4rem; }
-  @media (max-width: 900px) {
-    .c-wrapper, .c-single-post .c-post__content pre code,
-    .c-single-post .c-post__content blockquote > * {
-      margin-top: 0; }
+    @media (max-width: 900px) {
+      .c-wrapper, .c-single-post .c-post__content pre code,
+      .c-single-post .c-post__content blockquote > * {
+        margin-top: 0; }
+        .c-wrapper--home {
+          grid-column-gap: 2rem;
+          grid-template-columns: 2fr 3fr; } }
+    @media (max-width: 650px) {
       .c-wrapper--home {
-        grid-column-gap: 2rem;
-        grid-template-columns: 2fr 3fr; } }
-  @media (max-width: 650px) {
-    .c-wrapper--home {
-      grid-template-columns: 1fr;
-      grid-row-gap: 4rem; } }
+        grid-template-columns: 1fr;
+        grid-row-gap: 4rem; } }
 
 h1,
 h2,
@@ -1394,7 +1394,8 @@ address {
   line-height: 1.4; }
 
 ::selection {
-  background: #b3d4fc;
+  background: #ffff7bc7;
+  color: #333;
   text-shadow: none; }
 
 audio,
