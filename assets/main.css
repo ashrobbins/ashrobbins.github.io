@@ -1466,7 +1466,7 @@ blockquote {
     blockquote cite:before {
       content: '- '; }
   blockquote a {
-    color: #2a2a2a; }
+    color: #fefefe; }
 
 em {
   font-style: italic;
