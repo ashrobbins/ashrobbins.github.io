@@ -8,7 +8,7 @@ tags:
 ---
 If you want to add multiple styles to an element via JavaScript, and you don't care about over-riding any existing style attribute it may have, you can use `cssText` to do that.
 
-{% highlight js %}  
+{% highlight js %}
 element.style.cssText = 'height: 100px; opacity: 1;';  
 {% endhighlight %}
 
