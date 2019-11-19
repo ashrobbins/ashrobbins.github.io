@@ -16,7 +16,7 @@ fields:
   name: tags
   label: Tags
 pages:
-- _posts/set-multiple-styles-in-js-with-style-csstext.md
+- _posts/2019-11-19-set-multiple-styles-in-js-with-style-csstext.md
 - _posts/2019-04-04-svg-gradients-in-css.md
 - _posts/2019-01-14-switching-java-version-in-terminal.md
 - _posts/2019-01-14-things-that-piss-me-off-about-the-internet-vol-2.md
