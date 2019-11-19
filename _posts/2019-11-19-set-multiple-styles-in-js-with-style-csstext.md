@@ -1,5 +1,5 @@
 ---
-title: Set multiple styles in JS with `style.cssText`
+title: Set multiple styles in JS with cssText
 date: 2019-11-19 00:00:00 +0000
 tags:
 - css
