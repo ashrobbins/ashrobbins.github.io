@@ -6,7 +6,7 @@ permalink: "/who/"
 ---
 <img src="/assets/img/ash.png" width="100" style="float: left; left: -1rem; transform: none; top: -2rem;" />Alright? I'm a front end developer living in the (mostly) sunny south west of England, with over 10 years of experience building stuff for the web.
 
-I'm currently working for [Pulselive](http://www.pulselive.com), where we build websites and apps for some of the biggest players in the sporting world.
+I'm currently working for [Pulselive](http://www.pulselive.com), where we build websites and apps for some of the biggest players in the sporting world like the Premier League, FC Barcelona, World Rugby and the ECB.
 
 Away from work I love football, and although I don't get to play as much since the birth of my daughters in mid 2017, most of the time you'll probably find me watching it, reading about it, or looking for score updates.
 
