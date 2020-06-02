@@ -1,0 +1,13 @@
+<p>Let’s say you have an object that looks like this…</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">const</span> <span class="nx">object</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">name</span><span class="p">:</span> <span class="s1">'Ash'</span><span class="p">,</span>
+    <span class="na">color</span><span class="p">:</span> <span class="s1">'red'</span><span class="p">,</span>
+    <span class="na">age</span><span class="p">:</span> <span class="mi">100</span>
+<span class="p">};</span></code></pre></figure>
+
+<p>And for some reason maybe you need to create some local variables within a function based on the values of the keys in that object. You can do that like this…</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">const</span> <span class="p">{</span> <span class="nx">name</span><span class="p">,</span> <span class="nx">color</span><span class="p">,</span> <span class="nx">age</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">object</span><span class="p">;</span></code></pre></figure>
+
+<p>As long as each variable name you supply maps to the name of a key in the object, you’re good to go.</p>

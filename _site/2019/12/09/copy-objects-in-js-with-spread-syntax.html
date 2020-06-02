@@ -1,0 +1,18 @@
+<p>Let’s say in your code you have an object:</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">const</span> <span class="nx">object</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">name</span><span class="p">:</span> <span class="s1">'Ash'</span><span class="p">,</span>
+    <span class="na">color</span><span class="p">:</span> <span class="s1">'red'</span><span class="p">,</span>
+    <span class="na">age</span><span class="p">:</span> <span class="mi">100</span>
+<span class="p">};</span></code></pre></figure>
+
+<p>If you want to copy that object to a new object you can do that like…</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">const</span> <span class="nx">newObject</span> <span class="o">=</span> <span class="p">{</span> <span class="p">...</span><span class="nx">object</span> <span class="p">};</span></code></pre></figure>
+
+<p>If you wanted to copy that object but also update one of the values, you could do that like…</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">const</span> <span class="nx">newObject</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">...</span><span class="nx">object</span><span class="p">,</span>
+    <span class="na">color</span><span class="p">:</span> <span class="s1">'purple'</span>
+<span class="p">};</span></code></pre></figure>
