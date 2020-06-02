@@ -1,4 +1,169 @@
-<p>On one of our sites we have a grid of article thumbnails that becomes horizontally scrollable on mobile, and we’ve used <code class="highlighter-rouge">scroll-snap</code> on the container element to give a more carousel-like feel and make sure that the list always snaps to the edge of one of the items.</p>
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Fixing an issue with scroll-snap on iOS | Ash Robbins</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Fixing an issue with scroll-snap on iOS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="On one of our sites we have a grid of article thumbnails that becomes horizontally scrollable on mobile, and we’ve used scroll-snap on the container element to give a more carousel-like feel and make sure that the list always snaps to the edge of one of the items." />
+<meta property="og:description" content="On one of our sites we have a grid of article thumbnails that becomes horizontally scrollable on mobile, and we’ve used scroll-snap on the container element to give a more carousel-like feel and make sure that the list always snaps to the edge of one of the items." />
+<link rel="canonical" href="http://localhost:4000/2019/11/06/fixing-an-issue-with-scroll-snap-on-ios.html" />
+<meta property="og:url" content="http://localhost:4000/2019/11/06/fixing-an-issue-with-scroll-snap-on-ios.html" />
+<meta property="og:site_name" content="Ash Robbins" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-11-06T00:00:00+00:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2019/11/06/fixing-an-issue-with-scroll-snap-on-ios.html","headline":"Fixing an issue with scroll-snap on iOS","dateModified":"2019-11-06T00:00:00+00:00","datePublished":"2019-11-06T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/11/06/fixing-an-issue-with-scroll-snap-on-ios.html"},"description":"On one of our sites we have a grid of article thumbnails that becomes horizontally scrollable on mobile, and we’ve used scroll-snap on the container element to give a more carousel-like feel and make sure that the list always snaps to the edge of one of the items.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Ash Robbins" />
+
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i,900,900i" rel="stylesheet">
+</head>
+
+
+    <body>
+        <header class="c-header c-wrapper">
+    <a href="/" title="" class="c-logo">ar</a>
+
+    <nav class="c-nav" role="navigation">
+    
+    
+    
+        <ol class="c-nav__list u-no-list">
+
+            
+
+                
+                
+
+            
+
+                
+                
+
+            
+
+                
+                
+
+            
+
+                
+                
+
+            
+
+                
+                
+
+            
+
+                
+                
+
+            
+
+                
+                
+
+            
+
+                
+                
+                    
+                
+
+            
+
+                
+                
+
+            
+
+                
+                
+
+            
+
+                
+                
+
+            
+
+                
+                
+
+            
+
+                
+                
+
+            
+
+                
+                
+                    
+                        <li class="c-nav__item">
+                            <a class="c-nav__link" href="/who/">Who?</a>
+                        </li>
+                    
+                
+
+            
+
+                
+                
+
+            
+
+                
+                
+
+            
+        </ol>
+    
+</nav>
+
+</header>
+
+        <main class="c-wrapper" aria-label="Content">
+
+            <h1 class="c-heading--page">Fixing an issue with scroll-snap on iOS</h1>
+            <article class="c-post h-entry">
+
+  <header class="c-post__header">
+    <div class="c-post__meta">
+      <span class="c-post__meta-on">Posted on</span>
+      <time class="dt-published" datetime="2019-11-06T00:00:00+00:00" itemprop="datePublished">
+        
+        Nov 6, 2019
+      </time>
+      
+      <span class="c-post__meta-in">in</span>
+        <ul class="c-post__tags">
+          
+            <li class="c-post__tag">
+              <a href="/tag/css/">#css</a>
+            </li>
+          
+            <li class="c-post__tag">
+              <a href="/tag/mobile/">#mobile</a>
+            </li>
+          
+        </ul>
+      
+      </div>
+  </header>
+
+  <div class="c-post__content" itemprop="articleBody">
+    <p>On one of our sites we have a grid of article thumbnails that becomes horizontally scrollable on mobile, and we’ve used <code class="highlighter-rouge">scroll-snap</code> on the container element to give a more carousel-like feel and make sure that the list always snaps to the edge of one of the items.</p>
 
 <p>Our QA team raised a bug on certain iOS devices where the list would always snap back to the first item and not scroll through as the user expected.</p>
 
@@ -11,3 +176,53 @@
 <p>to the container element.</p>
 
 <p><img src="https://media.giphy.com/media/d7BjVQoKpG0WhxchJY/giphy.gif" alt="" /></p>
+
+  </div>
+
+  
+
+  <a class="u-url" href="/2019/11/06/fixing-an-issue-with-scroll-snap-on-ios.html" hidden></a>
+</article>
+
+        </main>
+
+        <footer class="c-site-footer">
+  <div class="c-wrapper">
+
+    <h2 class="c-copyright">&copy; Ash Robbins</h2>
+    <ol class="c-social-nav">
+    <li class="c-social-nav__item">
+        <a href="mailto:ashleyrobbins3@gmail.com" target="_blank" class="c-social-nav__link">
+            <i class="fas fa-at"></i>
+        </a>
+    </li>
+    <li class="c-social-nav__item">
+        <a href="http://www.twitter.com/ash_robbins" target="_blank" class="c-social-nav__link">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </li>
+    <li class="c-social-nav__item">
+        <a href="http://www.github.com/ashrobbins" target="_blank" class="c-social-nav__link">
+            <i class="fab fa-github"></i>
+        </a>
+    </li>
+    <li class="c-social-nav__item">
+        <a href="http://www.codepen.io/ashrobbins" target="_blank" class="c-social-nav__link">
+            <i class="fab fa-codepen"></i>
+        </a>
+    </li>
+</ol>
+
+
+  </div>
+
+</footer>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="/assets/js/nav.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    </body>
+
+</html>

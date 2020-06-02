@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Copy objects in JS with spread syntax
 date: 2019-12-09 00:00:00 +0000
 tags:

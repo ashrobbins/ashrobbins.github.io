@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Create multiple vars from object keys
 date: 2019-12-09 00:00:00 +0000
 tags:

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Fixing an issue with scroll-snap on iOS
 date: 2019-11-06 00:00:00 +0000
 tags:
