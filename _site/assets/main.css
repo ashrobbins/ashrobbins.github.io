@@ -1591,7 +1591,7 @@ HEADER
 
 .c-site-footer {
   background-color: #FFEB3A;
-  color: #fefefe; }
+  color: #2a2a2a; }
   .c-site-footer .c-wrapper, .c-site-footer .c-single-post .c-post__content pre code, .c-single-post .c-post__content pre .c-site-footer code,
   .c-site-footer .c-single-post .c-post__content blockquote > *,
   .c-single-post .c-post__content .c-site-footer blockquote > * {
@@ -1602,7 +1602,8 @@ HEADER
 
 .c-copyright {
   margin: 0;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  color: #2a2a2a; }
 
 .c-social-nav {
   display: flex;
@@ -1611,8 +1612,10 @@ HEADER
   .c-social-nav__item {
     margin-left: 2rem;
     margin-bottom: 0; }
-  .c-social-nav__link:hover {
+  .c-social-nav__link {
     color: #2a2a2a; }
+  .c-social-nav__link:hover {
+    text-decoration: underline; }
 
 /******************************************
 LOGO

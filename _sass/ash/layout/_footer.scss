@@ -1,6 +1,6 @@
 .c-site-footer {
     background-color: $primary-colour;
-    color: $white;
+    color: $black;
 
     .c-wrapper {
         display: flex;
@@ -13,6 +13,7 @@
 .c-copyright {
     margin: 0;
     font-size: 1.4rem;
+    color: $black;
 }
 
 .c-social-nav {
@@ -25,7 +26,11 @@
         margin-bottom: 0;
     }
 
-    &__link:hover {
+    &__link {
         color: $black;
+    }
+
+    &__link:hover {
+        text-decoration: underline;
     }
 }
