@@ -1335,11 +1335,11 @@ li {
 a,
 a:visited {
   color: #fefefe;
-  border-bottom: 2px solid #FFEB3B;
+  border-bottom: 2px solid #FFEB3A;
   text-decoration: none; }
 
 a:hover {
-  color: #FFEB3B;
+  color: #FFEB3A;
   text-decoration: none; }
 
 img {
@@ -1384,7 +1384,7 @@ button {
 hr {
   margin: 0.3rem 0;
   border: none;
-  border-top: 3px solid #FFEB3B; }
+  border-top: 3px solid #FFEB3A; }
 
 address {
   margin: 0 0 1.2rem 0;
@@ -1509,7 +1509,7 @@ select {
 STYLE OVERRIDES
 ******************************************/
 .s-red {
-  color: #FFEB3B; }
+  color: #FFEB3A; }
 
 /******************************************
 HEADINGS
@@ -1535,7 +1535,7 @@ h1, h2, h3, h4, h5, h6,
   padding-top: 1rem;
   font-size: 1.8rem;
   font-weight: 400;
-  border-top: 3px solid #FFEB3B; }
+  border-top: 3px solid #FFEB3A; }
   @media (max-width: 900px) {
     .c-heading--tagline {
       font-size: 2rem; } }
@@ -1588,7 +1588,7 @@ HEADER
   color: #18161d; }
 
 .c-site-footer {
-  background-color: #FFEB3B;
+  background-color: #FFEB3A;
   color: #18161d; }
   .c-site-footer .c-wrapper, .c-site-footer .c-single-post .c-post__content pre code, .c-single-post .c-post__content pre .c-site-footer code,
   .c-site-footer .c-single-post .c-post__content blockquote > *,
@@ -1634,10 +1634,10 @@ LOGO
   font-weight: 900;
   line-height: normal;
   color: #fefefe;
-  border-bottom: 3px solid #FFEB3B; }
+  border-bottom: 3px solid #FFEB3A; }
   .c-logo:hover,
   .c-logo:visited:hover {
-    color: #FFEB3B; }
+    color: #FFEB3A; }
   @media (max-width: 700px) {
     .c-logo,
     .c-logo:visited {
@@ -1669,7 +1669,7 @@ NAV
     .c-nav__link:visited {
       color: #fefefe; }
     .c-nav__link:hover, .c-nav__link.router-link-active {
-      color: #FFEB3B; }
+      color: #FFEB3A; }
     @media (max-width: 700px) {
       .c-nav__link {
         font-size: 1.6rem; } }
@@ -1683,7 +1683,7 @@ NAV
 .c-header--home .c-nav__link {
   color: #fefefe; }
   .c-header--home .c-nav__link:hover {
-    color: #FFEB3B; }
+    color: #FFEB3A; }
 
 /******************************************
 POST
@@ -1740,7 +1740,7 @@ POST
     .tag a:before {
       display: none; }
   .tag:hover {
-    background-color: #FFEB3B !important; }
+    background-color: #FFEB3A !important; }
     .tag:hover a {
       color: #18161d !important; }
   .tag--css {
@@ -1802,7 +1802,7 @@ POST
   .c-post blockquote {
     margin: 3rem 0;
     padding: 2rem 3rem;
-    border-left: 10px solid #FFEB3B;
+    border-left: 10px solid #FFEB3A;
     background-color: rgba(255, 81, 88, 0.1);
     font-family: "Fira Sans", serif;
     font-size: 1em;
@@ -1876,7 +1876,7 @@ POST LIST
   .c-post-list__link:visited {
     color: #fefefe; }
   .c-post-list__link:hover {
-    color: #FFEB3B; }
+    color: #FFEB3A; }
 
 /******************************************
 POST
