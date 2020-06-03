@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  "Responsive breakpoints"
-date:   2013-07-19 15:35:36 +0000
-tags: [css, responsive]
+title: Responsive breakpoints
+date: 2013-07-19T15:35:36.000+00:00
+tags:
+- css
+
 ---
 I just read this quote in .Net magazine:
 
