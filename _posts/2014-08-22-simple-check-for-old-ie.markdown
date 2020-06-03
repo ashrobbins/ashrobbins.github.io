@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  "Simple check for old IE"
-date:   2014-08-22 15:35:36 +0000
-tags: [js, browsers]
+title: Simple check for old IE
+date: 2014-08-22T15:35:36.000+00:00
+tags:
+- js
+
 ---
 On a recent project I needed to be able to detect if a user was browsing using IE8 or 7, and serve different functionality to them if that was true.
 
