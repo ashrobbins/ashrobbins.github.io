@@ -1245,9 +1245,9 @@ body {
   word-wrap: break-word;
   font-size: 1.8rem;
   line-height: 1.8;
-  background-color: #18161d; }
+  background-color: #2a2a2a; }
   body.home {
-    background-color: #18161d; }
+    background-color: #2a2a2a; }
     body.home [class^="c-heading--"] {
       color: #fefefe; }
   @media (max-width: 900px) {
@@ -1273,18 +1273,20 @@ body {
   .c-single-post .c-post__content blockquote > * + * {
     min-height: calc(100vh - 29.2rem); }
   .c-wrapper--home {
-    max-width: 90rem; }
-  @media (max-width: 900px) {
-    .c-wrapper, .c-single-post .c-post__content pre code,
-    .c-single-post .c-post__content blockquote > * {
-      margin-top: 0; }
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 4rem; }
+    @media (max-width: 900px) {
+      .c-wrapper, .c-single-post .c-post__content pre code,
+      .c-single-post .c-post__content blockquote > * {
+        margin-top: 0; }
+        .c-wrapper--home {
+          grid-column-gap: 2rem;
+          grid-template-columns: 2fr 3fr; } }
+    @media (max-width: 650px) {
       .c-wrapper--home {
-        grid-column-gap: 2rem;
-        grid-template-columns: 2fr 3fr; } }
-  @media (max-width: 650px) {
-    .c-wrapper--home {
-      grid-template-columns: 1fr;
-      grid-row-gap: 4rem; } }
+        grid-template-columns: 1fr;
+        grid-row-gap: 4rem; } }
 
 h1,
 h2,
@@ -1456,7 +1458,7 @@ blockquote {
   overflow: hidden;
   padding: 3rem 0 0;
   margin: 0 0 3rem 0;
-  border-left: 1rem solid #18161d; }
+  border-left: 1rem solid #2a2a2a; }
   blockquote footer {
     text-align: right; }
   blockquote cite {
@@ -1521,9 +1523,9 @@ HEADINGS
  */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Montserrat", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Fira Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.25rem;
-  font-weight: 900; }
+  font-weight: 700; }
 
 .c-heading--site {
   font-size: 3rem;
@@ -1541,10 +1543,10 @@ h1, h2, h3, h4, h5, h6,
       font-size: 2rem; } }
 
 .c-heading--page {
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 900;
   text-align: center;
-  margin-bottom: 1.4rem; }
+  margin-bottom: 8rem; }
   @media (max-width: 900px) {
     .c-heading--page {
       margin-bottom: 1rem;
@@ -1557,7 +1559,7 @@ h1, h2, h3, h4, h5, h6,
   color: #58b8ce; }
 
 .c-heading--post {
-  margin-bottom: 0;
+  margin-bottom: 3rem;
   font-size: 2.6rem;
   font-weight: 900;
   color: #fefefe; }
@@ -1585,41 +1587,32 @@ HEADER
 
 .c-header__home-link {
   display: block;
-  color: #18161d; }
+  color: #2a2a2a; }
 
 .c-site-footer {
   background-color: #FFEB3A;
-  color: #18161d; }
+  color: #fefefe; }
   .c-site-footer .c-wrapper, .c-site-footer .c-single-post .c-post__content pre code, .c-single-post .c-post__content pre .c-site-footer code,
   .c-site-footer .c-single-post .c-post__content blockquote > *,
   .c-single-post .c-post__content .c-site-footer blockquote > * {
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 1.2rem 0; }
+    padding: 2rem 0; }
 
 .c-copyright {
   margin: 0;
-  font-size: 1.1rem;
-  font-weight: 700;
-  line-height: 1;
-  color: #18161d; }
+  font-size: 1.4rem; }
 
 .c-social-nav {
   display: flex;
   margin: 0 0 0 auto;
   list-style: none; }
   .c-social-nav__item {
-    margin-left: 1.6rem;
+    margin-left: 2rem;
     margin-bottom: 0; }
-  .c-social-nav__link {
-    color: #18161d; }
   .c-social-nav__link:hover {
-    text-decoration: underline; }
-  .c-social-nav .svg-inline--fa.fa-w-16 {
-    width: 18px; }
+    color: #2a2a2a; }
 
 /******************************************
 LOGO
@@ -1627,14 +1620,13 @@ LOGO
 .c-logo,
 .c-logo:visited {
   display: inline-block;
-  height: 40px;
   padding-bottom: .5rem;
-  font-family: "Montserrat", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 3rem;
+  font-family: "Fira Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 4rem;
   font-weight: 900;
-  line-height: normal;
+  line-height: 1;
   color: #fefefe;
-  border-bottom: 3px solid #FFEB3A; }
+  border-bottom: 5px solid #FFEB3A; }
   .c-logo:hover,
   .c-logo:visited:hover {
     color: #FFEB3A; }
@@ -1643,8 +1635,8 @@ LOGO
     .c-logo:visited {
       height: 3.8rem;
       padding: 0;
-      font-size: 2.6rem;
-      border-bottom-width: 2px; } }
+      font-size: 2.8rem;
+      border-bottom-width: .4rem; } }
 
 /******************************************
 NAV
@@ -1662,7 +1654,7 @@ NAV
     display: block;
     position: relative;
     color: #fefefe;
-    font-family: "Montserrat", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "Fira Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 2rem;
     font-weight: 700;
     border: 0; }
@@ -1690,15 +1682,13 @@ POST
 ******************************************/
 .c-post__meta {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   margin-bottom: 4rem;
   font-size: 2rem; }
-  .c-post__meta .c-post__date {
-    margin-bottom: 10px;
-    font-size: 14px; }
-  .c-post__meta .tag {
-    font-size: 14px; }
+  .c-post__meta-on {
+    margin-right: .4rem; }
+  .c-post__meta-in {
+    margin: 0 .4rem; }
   @media (max-width: 900px) {
     .c-post__meta {
       margin-bottom: 2rem;
@@ -1707,58 +1697,18 @@ POST
     .c-post__meta {
       font-size: 1.4rem; } }
 
-.tags {
+.c-post__tags {
   list-style: none;
   display: flex;
   margin: 0; }
 
-.tag {
-  display: inline-block;
-  background-color: #f0f2f7;
-  border: 0;
-  color: #18161d;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1;
-  text-transform: uppercase;
-  transition: background-color ease .2s; }
-  .tag + .tag {
-    margin-left: 10px; }
-  .c-heading--page .tag {
-    margin-bottom: 40px;
-    padding: 8px 14px;
-    font-family: "Fira Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 3rem;
-    pointer-events: none; }
-  .tag a {
-    display: block;
-    padding: 4px 6px;
-    border: 0;
-    color: #18161d;
-    transition: color ease .2s; }
-    .tag a:before {
-      display: none; }
-  .tag:hover {
-    background-color: #FFEB3A !important; }
-    .tag:hover a {
-      color: #18161d !important; }
-  .tag--css {
-    background-color: cornflowerblue; }
-    .tag--css, .tag--css a {
-      color: #fefefe; }
-  .tag--js {
-    background-color: darkorchid; }
-    .tag--js, .tag--js a {
-      color: #fefefe; }
-  .tag--rant {
-    background-color: tomato; }
-    .tag--rant, .tag--rant a {
-      color: #fefefe; }
-  .tag--angular {
-    background-color: mediumseagreen; }
-    .tag--angular, .tag--angular a {
-      color: #1e442f; }
+.c-post__tag {
+  font-weight: 700; }
+  .c-post__tag + .c-post__tag:before {
+    content: ", ";
+    font-weight: 400; }
+  .c-post__tag__link:before {
+    display: none; }
 
 .c-post {
   max-width: 73rem;
@@ -1808,10 +1758,6 @@ POST
     font-size: 1em;
     font-style: normal;
     color: #f2e8e8; }
-  .c-post__date {
-    font-size: 13px;
-    text-transform: uppercase;
-    color: #f0f2f7; }
   .c-post__content {
     color: #ddd; }
   .c-post .highlight .s2 {
@@ -1859,16 +1805,9 @@ POST
 /******************************************
 POST LIST
 ******************************************/
-.c-post-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
 .c-post-list__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 6rem; }
+  overflow: hidden;
+  margin-bottom: 2rem; }
 
 .c-post-list__link {
   position: relative;
@@ -1882,7 +1821,7 @@ POST LIST
 POST
 ******************************************/
 .heading__page--single {
-  color: #18161d; }
+  color: #2a2a2a; }
 
 .c-single-post {
   margin-bottom: 6rem; }
@@ -1899,7 +1838,7 @@ POST
     margin-bottom: 3rem; }
   .c-single-post .c-post__content p a:hover {
     padding: 0.2rem 0.5rem;
-    background-color: #18161d;
+    background-color: #2a2a2a;
     color: #fefefe; }
   .c-single-post .c-post__content h3 {
     font-size: 2rem; }
