@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Fixing an issue with scroll-snap on iOS
-date: 2019-11-06 00:00:00 +0000
+date: 2019-11-06T00:00:00.000+00:00
 tags:
 - css
-- mobile
 
 ---
 On one of our sites we have a grid of article thumbnails that becomes horizontally scrollable on mobile, and we've used `scroll-snap` on the container element to give a more carousel-like feel and make sure that the list always snaps to the edge of one of the items.
