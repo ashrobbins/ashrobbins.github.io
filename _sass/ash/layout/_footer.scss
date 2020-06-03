@@ -4,15 +4,19 @@
 
     .c-wrapper {
         display: flex;
+        align-items: center;
+        justify-content: center;
         margin-top: 0;
         margin-bottom: 0;
-        padding: 2rem 0;
+        padding: 1.2rem 0;
     }
 }
 
 .c-copyright {
     margin: 0;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1;
     color: $black;
 }
 
@@ -22,7 +26,7 @@
     list-style: none;
 
     &__item {
-        margin-left: 2rem;
+        margin-left: 1.6rem;
         margin-bottom: 0;
     }
 
@@ -32,5 +36,9 @@
 
     &__link:hover {
         text-decoration: underline;
+    }
+
+    .svg-inline--fa.fa-w-16 {
+        width: 18px;
     }
 }

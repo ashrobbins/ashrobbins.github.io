@@ -3,7 +3,7 @@ POST LIST
 ******************************************/
 .c-post-list__item {
     overflow: hidden;
-    margin-bottom: 2rem;
+    margin-bottom: rem-calc(50);
 }
 .c-post-list__link {
     position: relative;

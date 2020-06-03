@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: $title-font;
     font-size: 1.25rem;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .c-heading--site {
@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6,
     }
 }
 .c-heading--page {
-    font-size: rem-calc(50);
+    font-size: rem-calc(40);
     font-weight: 900;
     text-align: center;
     margin-bottom: rem-calc(80);
@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6,
     color: $secondary-colour;
 }
 .c-heading--post {
-    margin-bottom: rem-calc(30);
+    margin-bottom: 0;
     font-size: rem-calc(26);
     font-weight: 900;
     color: $white;

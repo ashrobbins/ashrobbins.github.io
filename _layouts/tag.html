@@ -7,8 +7,10 @@
         {% include header.html %}
 
         <main class="c-wrapper" aria-label="Content">
-            
-            <h1 class="c-heading--page">#{{ page.tag }}</h1>
+
+            <h1 class="c-heading--page">
+                <span class="tag tag--{{ page.tag }}">{{ page.tag }}</span>
+            </h1>
 
             {{ content }}
 
@@ -16,13 +18,22 @@
                 <ul class="c-post-list u-no-list">
                     {% for post in site.tags[page.tag] %}
                         <li class="c-post-list__item">
-                            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-                            <span class="c-post__date">{{ post.date | date: date_format }}</span>
+                            {% if post.tags %}
+                                <ul class="tags">
+                                    {% for tag in post.tags %}
+                                    <li class="tag tag--{{ tag }}">
+                                        <a href="/tag/{{ tag }}/">{{ tag }}</a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
                             <h3 class="c-heading--post">
                                 <a class="c-post-list__link" href="{{ post.url | relative_url }}">
-                                    {{ post.title | escape }}
+                                {{ post.title | escape }}
                                 </a>
                             </h3>
+                            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                            <span class="c-post__date">{{ post.date | date: date_format }}</span>
                             {% if site.show_excerpts %}
                                 {{ post.excerpt }}
                             {% endif %}

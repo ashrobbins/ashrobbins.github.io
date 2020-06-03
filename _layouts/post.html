@@ -11,16 +11,16 @@ layout: default
         {{ page.date | date: date_format }}
       </time>
       {% if page.tags %}
-      <span class="c-post__meta-in">in</span>
-        <ul class="c-post__tags">
+        <span class="c-post__meta-in">in</span>
+        <ul class="tags">
           {% for tag in page.tags %}
-            <li class="c-post__tag">
+            <li class="tag tag--{{ tag }}">
               <a href="/tag/{{ tag }}/">#{{ tag }}</a>
             </li>
           {% endfor %}
         </ul>
       {% endif %}
-      </div>
+    </div>
   </header>
 
   <div class="c-post__content" itemprop="articleBody">
