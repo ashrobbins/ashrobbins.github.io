@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 'Switching Java version in terminal '
-date: 2019-01-15 00:00:00 +0000
+date: 2019-01-15T00:00:00.000+00:00
 tags:
-- java
+- general
 
 ---
 I was trying to run a maven command the other day and it kept failing due to my version of Java being too recent. You can quickly find out what version of Java you're using with the command `java -version`, which will give you an output like this...
