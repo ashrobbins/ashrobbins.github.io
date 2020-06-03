@@ -80,6 +80,24 @@ POST
             color: $white;
         }
     }
+
+    &--rant {
+        background-color: tomato;
+
+        &,
+        & a {
+            color: $white;
+        }
+    }
+
+    &--angular {
+        background-color: mediumseagreen;
+
+        &,
+        & a {
+            color: #1e442f;
+        }
+    }
 }
 .c-post {
     max-width: 73rem;

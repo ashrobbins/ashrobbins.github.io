@@ -1743,6 +1743,14 @@ POST
     background-color: darkorchid; }
     .tag--js, .tag--js a {
       color: #fefefe; }
+  .tag--rant {
+    background-color: tomato; }
+    .tag--rant, .tag--rant a {
+      color: #fefefe; }
+  .tag--angular {
+    background-color: mediumseagreen; }
+    .tag--angular, .tag--angular a {
+      color: #1e442f; }
 
 .c-post {
   max-width: 73rem;
