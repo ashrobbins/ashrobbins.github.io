@@ -12,12 +12,16 @@ Say you've got a `png` image of a shirt with a transparent background. If you ap
 
 We can fix that by instead putting the `img` into a wrapping element:
 
-    <span>
-       <img src="/path/to/image.png" />
-    </span>
+{% highlight html %}  
+<span>  
+    <img src="/path/to/image.png" />  
+</span>  
+{% endhighlight %}
 
 and then applying a css `filter` to that wrapping element:
 
-    span {
-       filter: drop-shadow(-1px 7px 4px rgba(0,0,0,.7));
-    }
+{% highlight css %}  
+span {  
+    filter: drop-shadow(-1px 7px 4px rgba(0,0,0,.7));  
+}  
+{% endhighlight %}
