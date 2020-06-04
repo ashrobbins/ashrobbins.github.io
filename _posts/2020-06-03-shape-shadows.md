@@ -13,7 +13,7 @@ Say you've got a `png` image of a shirt with a transparent background. If you ap
 
 We can fix that by instead putting the `img` into a wrapping element:
 
-{% highlight html %}  
+{% highlight html %}
 <span>  
 <img src="/path/to/image.png" />  
 </span>  
@@ -21,7 +21,7 @@ We can fix that by instead putting the `img` into a wrapping element:
 
 and then applying a css `filter` to that wrapping element:
 
-{% highlight css %}  
+{% highlight css %}
 span {  
 filter: drop-shadow(-1px 7px 4px rgba(0,0,0,.7));  
 }  
