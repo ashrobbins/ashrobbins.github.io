@@ -1,0 +1,19 @@
+<p>Something I just found out - you can have shadows that follow the outline of a shape within an image, by sticking it into a wrapper element that has a <code class="highlighter-rouge">filter</code> applied.</p>
+
+<p>Say you’ve got a <code class="highlighter-rouge">png</code> image of a shirt with a transparent background. If you apply a normal <code class="highlighter-rouge">box-shadow</code> to it you’ll get a shadow around the whole image, which would look a bit odd.</p>
+
+<p><img src="/uploads/screenshot-2020-06-04-at-09-58-26.png" alt="" /></p>
+
+<p>We can fix that by instead putting the <code class="highlighter-rouge">img</code> into a wrapping element:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span&gt;</span>  
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/path/to/image.png"</span> <span class="nt">/&gt;</span>  
+<span class="nt">&lt;/span&gt;</span>  </code></pre></figure>
+
+<p>and then applying a css <code class="highlighter-rouge">filter</code> to that wrapping element:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">span</span> <span class="p">{</span>  
+    <span class="nl">filter</span><span class="p">:</span> <span class="n">drop-shadow</span><span class="p">(</span><span class="m">-1px</span> <span class="m">7px</span> <span class="m">4px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">.7</span><span class="p">));</span>  
+<span class="p">}</span>  </code></pre></figure>
+
+<p><img src="/uploads/screenshot-2020-06-04-at-10-05-04.png" alt="" /></p>
