@@ -1,7 +1,8 @@
 ---
 title: Shape shadows
 date: 2020-06-03 23:00:00 +0000
-tags: []
+tags:
+- css
 
 ---
 Something I just found out - you can have shadows that follow the outline of a shape within an image, by sticking it into a wrapper element that has a `filter` applied.
@@ -14,7 +15,7 @@ We can fix that by instead putting the `img` into a wrapping element:
 
 {% highlight html %}  
 <span>  
-    <img src="/path/to/image.png" />  
+<img src="/path/to/image.png" />  
 </span>  
 {% endhighlight %}
 
@@ -22,6 +23,8 @@ and then applying a css `filter` to that wrapping element:
 
 {% highlight css %}  
 span {  
-    filter: drop-shadow(-1px 7px 4px rgba(0,0,0,.7));  
+filter: drop-shadow(-1px 7px 4px rgba(0,0,0,.7));  
 }  
 {% endhighlight %}
+
+![](/uploads/screenshot-2020-06-04-at-10-05-04.png)
