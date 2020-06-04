@@ -5,7 +5,6 @@ NAV
 .c-nav {
     display: block;
     margin: 0;
-    margin-left: auto;
 
     &__list {
         display: flex;
@@ -24,7 +23,7 @@ NAV
         font-size: rem-calc(20);
         font-weight: 700;
         border: 0;
-    
+
         &:visited {
             color: $white;
         }

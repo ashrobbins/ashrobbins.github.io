@@ -6,6 +6,7 @@
     <body class="home">
         <header class="c-header c-header--home c-wrapper">
             {% include logo.html %}
+            {% include tag-nav.html %}
             {% include nav.html %}
         </header>
 
@@ -16,6 +17,13 @@
                 <ul class="c-post-list u-no-list">
                     {% for post in site.posts %}
                     <li class="c-post-list__item">
+                        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                        <span class="c-post__date">{{ post.date | date: date_format }}</span>
+                        <h3 class="c-heading--post">
+                            <a class="c-post-list__link" href="{{ post.url | relative_url }}">
+                            {{ post.title | escape }}
+                            </a>
+                        </h3>
                         {% if post.tags %}
                             <ul class="tags">
                                 {% for tag in post.tags %}
@@ -25,13 +33,6 @@
                                 {% endfor %}
                             </ul>
                         {% endif %}
-                        <h3 class="c-heading--post">
-                            <a class="c-post-list__link" href="{{ post.url | relative_url }}">
-                            {{ post.title | escape }}
-                            </a>
-                        </h3>
-                        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-                        <span class="c-post__date">{{ post.date | date: date_format }}</span>
                         {% if site.show_excerpts %}
                             {{ post.excerpt }}
                         {% endif %}

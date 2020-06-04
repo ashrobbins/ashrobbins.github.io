@@ -1573,6 +1573,8 @@ HEADER
 ******************************************/
 .c-header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 auto 3rem;
   padding: 2rem 0; }
 
@@ -1586,6 +1588,14 @@ HEADER
 .c-header__home-link {
   display: block;
   color: #18161d; }
+
+.tag-nav .tag {
+  margin-bottom: 0;
+  font-size: 16px; }
+  .tag-nav .tag a {
+    padding: 6px 10px; }
+.tag-nav .tag + .tag {
+  margin-left: 20px; }
 
 .c-site-footer {
   background-color: #FFEB3A;
@@ -1651,8 +1661,7 @@ NAV
 ******************************************/
 .c-nav {
   display: block;
-  margin: 0;
-  margin-left: auto; }
+  margin: 0; }
   .c-nav__list {
     display: flex;
     margin: 0; }
@@ -1869,6 +1878,8 @@ POST LIST
   flex-direction: column;
   align-items: center;
   margin-bottom: 6rem; }
+  .c-post-list__item .tag {
+    margin-top: 10px; }
 
 .c-post-list__link {
   position: relative;

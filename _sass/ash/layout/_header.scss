@@ -3,6 +3,8 @@ HEADER
 ******************************************/
 .c-header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 auto 3rem;
     padding: rem-calc(20 0);
 }
@@ -16,4 +18,20 @@ HEADER
 .c-header__home-link {
     display: block;
     color: $black;
+}
+
+.tag-nav {
+
+    .tag {
+        margin-bottom: 0;
+        font-size: 16px;
+
+        a {
+            padding: 6px 10px;
+        }
+    }
+
+    .tag + .tag {
+        margin-left: 20px;
+    }
 }

@@ -12,6 +12,10 @@ POST LIST
     flex-direction: column;
     align-items: center;
     margin-bottom: rem-calc(60);
+
+    .tag {
+        margin-top: 10px;
+    }
 }
 
 .c-post-list__link {
