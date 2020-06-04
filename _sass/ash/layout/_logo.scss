@@ -4,23 +4,15 @@ LOGO
 .c-logo,
 .c-logo:visited {
     display: inline-block;
-    height: 40px;
-    padding-bottom: .5rem;
-    font-family: $title-font;
-    font-size: 3rem;
-    font-weight: 900;
-    line-height: normal;
-    color: $white;
-    border-bottom: 3px solid $primary-colour;
+    height: 30px;
+    width: 30px;
+    background-image: url('/assets/img/logo-white.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 0;
+    text-indent: -9999px;
 
     &:hover {
-        color: $primary-colour;
-    }
-
-    @media (max-width: 700px) {
-        height: 3.8rem;
-        padding: 0;
-        font-size: 2.6rem;
-        border-bottom-width: 2px;
+        background-image: url('/assets/img/logo-yellow.png');
     }
 }
