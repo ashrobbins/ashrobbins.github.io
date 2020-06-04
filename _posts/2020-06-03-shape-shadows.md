@@ -15,7 +15,7 @@ We can fix that by instead putting the `img` into a wrapping element:
 
 {% highlight html %}
 <span>  
-<img src="/path/to/image.png" />  
+    <img src="/path/to/image.png" />  
 </span>  
 {% endhighlight %}
 
@@ -23,7 +23,7 @@ and then applying a css `filter` to that wrapping element:
 
 {% highlight css %}
 span {  
-filter: drop-shadow(-1px 7px 4px rgba(0,0,0,.7));  
+    filter: drop-shadow(-1px 7px 4px rgba(0,0,0,.7));  
 }  
 {% endhighlight %}
 
